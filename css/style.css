@@ -1,0 +1,49 @@
+ 
+
+
+body {
+	width: 1200px;
+	margin:0 auto;
+}
+
+header {
+    font: 16px "Lucida Sans Unicode", serif;
+	text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    background-color: gray;
+    color: white;
+}
+
+main {
+	font: 16px "Lucida Sans Unicode", serif;
+	background-color:#E7E7E8;
+	padding: 50px;
+	color: gray;
+		
+}
+
+h1 {
+	font: "Tahoma", sans-serif;
+	padding-bottom: 30px;
+	border-bottom: solid 1px gray;
+}
+
+.menu{
+	background-color:#E7E7E8;
+	padding: 1em 0;
+	padding-right: 1.7em;
+	float:left;
+	margin: 24px 34px 24px 0;
+	
+}
+
+.odkaz {
+	list-style: none;
+	padding-left: 0;
+}
+a {
+	line-height: 1.9em;
+	text-decoration: none;
+	
+}
