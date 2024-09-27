@@ -1,35 +1,60 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="sk">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>web basic</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patinove odznaky za vstávanie ☕🌄</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    
     <header>
-    GitHub Test
+        <h1>Patinove odznaky za vstávanie ☕🌄</h1>
     </header>
-    
-    <main>
-    <h1>Sesame snaps biscuit</h1>
-    <h2>Pudding gingerbread</h2>
-    <p>   Sesame snaps biscuit cookie cotton candy. Lemon drops marshmallow gingerbread marzipan oat cake wafer caramels. Cake halvah tiramisu tiramisu. Bonbon bear claw tootsie roll chocolate cake brownie cotton candy wafer halvah macaroon. Pudding gingerbread tart tart halvah liquorice bear claw cookie ice cream. Chocolate apple pie fruitcake. Candy canes cake dessert chocolate bar. Biscuit jelly-o ice cream. Danish carrot cake halvah gummies pudding sesame snaps.</p>
-    <div class="menu">
-        <ul class="odkaz">
-            <li><a href="pages/stavebniny.html">Podstranka</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Ipsum</a></li>
-            <li><a href="#">Dolor</a></li>      
-        </ul>
+    <div class="badges-container">
+	<div class="badge">
+            <img src="badge3.jpg" alt="Badge 3" class="silver">
+            <p class="quote silver">Už máš viac ako polovicu za sebou! 😁 Len tak ďalej! Ty to zvládneš! </p>
+        </div>
+        <div class="badge">
+            <img src="badge2.jpg" alt="Badge 2" class="bronze">
+            <p class="quote bronze">Jeden deň máš už za sebou, zvládol si to tak isto zvládneš aj tento deň! 💪 </p>
+        </div>
+        <div class="badge">
+            <img src="badge1.jpg" alt="Badge 1" class="iron">
+            <p class="quote iron">Slnko dnes vyšlo práve pre teba tak utekaj za ním! 😁 To dáš!</p>
+        </div>
+        <div class="badge">
+            <div class="placeholder gold" onclick="openModal(this)">?</div>
+            <p class="quote gold">?</p>
+        </div>
+        <div class="badge">
+            <div class="placeholder platinum" onclick="openModal(this)">?</div>
+            <p class="quote platinum">?</p>
+        </div>
     </div>
-    <h2>Chocolate cake halvah</h2>
-<p>Pudding brownie chocolate cake chupa chups onbon. Pie danish apple pie biscuit. Pie tootsie roll sweet roll jelly-o chocolate cake halvah. Soufflé gummi bears sugar plum. Cupcake cake powder bonbon candy canes bonbon. Fruitcake gummies cotton candy marshmallow marshmallow powder carrot cake sweet roll. Halvah powder gummies. muffin fruitcake cake marzipan. Oat cake sugar plum pudding gummi bears cake halvah sesame snaps. Ice cream cotton candy bear claw gummies danish cake topping cake. 
-	<h2>Gummi bears</h2><hr />
 
-Macaroon halvah brownie pie danish jelly-o pastry oat cake. Tootsie roll fruitcake donut chocolate biscuit lollipop lemon drops. Gummi bears liquorice ice cream dessert pudding oat cake. Macaroon gingerbread dessert gummi bears biscuit. Tiramisu icing donut cotton candy muffin cake jelly liquorice toffee. </p>
-    </main>
-    
+    <!-- Modal for displaying images -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(element) {
+            const modal = document.getElementById("modal");
+            const modalImage = document.getElementById("modalImage");
+            if (element.tagName === 'IMG') {
+                modalImage.src = element.src; // For images
+            } else {
+                modalImage.src = ''; // Set to an empty image or default image if needed
+            }
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
